@@ -1,0 +1,43 @@
+<div class="background-image-container">
+  <img src="../../assets/user sign up.jpg" class="background-image">
+  <div class="form-container">
+    <div *ngIf="busDetails" class="ticket">
+      <h2>Booking Details</h2>
+      <div class="ticket-info">
+        <div class="ticket-row">
+          <span class="ticket-label">Bus Number:</span>
+          <span class="ticket-value">{{ busDetails.busNumber }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Source City:</span>
+          <span class="ticket-value">{{ busDetails.sourceCity }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Destination City:</span>
+          <span class="ticket-value">{{ busDetails.destinationCity }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Distance (Kms):</span>
+          <span class="ticket-value">{{ busDetails.distanceInKms }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Duration (Hours):</span>
+          <span class="ticket-value">{{ busDetails.durationInHours }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Departure Time:</span>
+          <span class="ticket-value">{{ busDetails.departureTime }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Fare:</span>
+          <span class="ticket-value">{{ busDetails.fare }}</span>
+        </div>
+        <div class="ticket-row">
+          <span class="ticket-label">Date:</span>
+          <span class="ticket-value">{{ busDetails.date }}</span>
+        </div>
+      </div>
+      <p class="booking-status">Status: Booked</p>
+    </div>
+  </div>
+</div>
